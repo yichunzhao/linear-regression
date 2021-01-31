@@ -7,5 +7,5 @@ public interface RegressionSolver {
      *
      * @return int 1: positive related; 0: cannot be determined; -1: negative related
      */
-    int isXYPositiveRelated();
+    int isXYPositiveRelated(double[][] dataSet);
 }

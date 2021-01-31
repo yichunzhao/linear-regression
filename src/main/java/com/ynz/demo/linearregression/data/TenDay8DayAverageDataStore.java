@@ -7,7 +7,18 @@ public class TenDay8DayAverageDataStore implements Accessible {
 
     @Override
     public double[][] getData() {
-        double[][] data = {{0D, 1D, 2D, 3D, 4D, 5D, 6D, 7D, 8D, 9D}, {374.83, 375.72, 378.01, 382.00, 384.38, 386.50, 386.93, 386.52, 386.46, 384.63}};
+        double[][] data = {
+                {0D, 374.83},
+                {1D, 375.72},
+                {2D, 378.01},
+                {3D, 382.00},
+                {4D, 384.38},
+                {5D, 386.50},
+                {6D, 386.93},
+                {7D, 386.52},
+                {8D, 386.46},
+                {9D, 384.63}
+        };
         return data;
     }
 

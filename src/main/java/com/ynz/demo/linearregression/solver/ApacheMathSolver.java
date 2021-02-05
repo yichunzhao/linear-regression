@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 @RequiredArgsConstructor
 @Slf4j
 public class ApacheMathSolver implements RegressionSolver {
-    private final DecimalFormat df = new DecimalFormat("0.00");
+    private final DecimalFormat df;
     private final SimpleRegression simpleRegression;
 
     @Override
@@ -28,7 +28,7 @@ public class ApacheMathSolver implements RegressionSolver {
         double r = simpleRegression.getR();
         double rSquare = simpleRegression.getRSquare();
 
-        log.info("slop: " + df.format(slop) + " intercept: " + df.format(intercept) + " R: " + df.format(r) + " R square: " + df.format(rSquare));
+        log.info("slop: " + df.format(slop) + " intercept: " + df.format(intercept) + " R square: " + df.format(rSquare));
 
         return slop > 0 ? 1 : -1;
     }
